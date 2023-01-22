@@ -1,0 +1,47 @@
+.container {
+  @apply h-screen overflow-y-auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main {
+    @apply relative h-screen;
+
+    .background {
+      @apply absolute h-full w-full bg-cover object-cover;
+    }
+
+    .presentation {
+      @apply relative mx-auto flex h-full max-w-min flex-col items-center justify-center gap-16 p-32;
+
+      .title,
+      .subtitle {
+        @apply text-center;
+      }
+
+      .title {
+        @apply whitespace-nowrap text-6xl;
+
+        .salutation {
+          @apply italic;
+        }
+      }
+
+      .subtitle {
+        @apply text-2xl text-black text-opacity-50;
+
+        .emphasis {
+          @apply text-rose-600;
+        }
+      }
+    }
+
+    .scrollIcon {
+      @apply sticky bottom-16 left-1/2 -translate-x-1/2 -translate-y-full transform text-6xl;
+    }
+  }
+}

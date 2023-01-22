@@ -1,0 +1,42 @@
+.Footer {
+  @apply gap-8 p-32;
+
+  display: grid;
+  grid-template-areas:
+    "title  contacts"
+    "title  separator"
+    "title  socials";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+
+  .title {
+    @apply text-4xl;
+    grid-area: title;
+  }
+
+  .contacts,
+  .socials {
+    @apply flex flex-col gap-4;
+
+    a {
+      @apply text-2xl transition-colors hover:text-rose-600;
+
+      span {
+        vertical-align: -0.125em;
+      }
+    }
+  }
+
+  .contacts {
+    grid-area: contacts;
+  }
+
+  .separator {
+    @apply border-b border-black border-opacity-25;
+    grid-area: separator;
+  }
+
+  .socials {
+    grid-area: socials;
+  }
+}

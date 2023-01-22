@@ -1,8 +1,9 @@
 // noinspection HtmlRequiredTitleElement
 
 import "@/styles/globals.css";
-import { PropsWithChildren } from "react";
+
 import { Karla as Font } from "@next/font/google";
+import { PropsWithChildren } from "react";
 
 const font = Font({ subsets: ["latin"] });
 
