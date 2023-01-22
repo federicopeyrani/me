@@ -1,0 +1,16 @@
+.main {
+  @apply flex h-screen flex-col items-center justify-center;
+}
+
+.background {
+  height: 100vh;
+  @apply fixed inset-0 bg-cover object-cover;
+}
+
+.title {
+  @apply z-10 text-6xl;
+}
+
+.salutation {
+  @apply italic;
+}
