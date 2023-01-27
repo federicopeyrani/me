@@ -4,7 +4,10 @@ import { ComponentProps } from "react";
 
 import styles from "./Icon.module.scss";
 
-const icons = localFont({ src: "material-symbols-outlined.ttf" });
+const icons = localFont({
+  src: "../../../node_modules/material-symbols/material-symbols-outlined.woff2",
+  display: "block",
+});
 
 export type IconProps = Omit<ComponentProps<"span">, "children"> & {
   symbol: string;
