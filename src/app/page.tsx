@@ -22,6 +22,7 @@ const Page = () => (
         alt="background"
         quality={100}
         placeholder="blur"
+        fill
       />
 
       <div className={styles.presentation}>
