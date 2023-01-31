@@ -1,6 +1,7 @@
 // noinspection HtmlRequiredTitleElement
 
 import "@/styles/globals.css";
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import { Bodoni_Moda, Karla } from "@next/font/google";
 import cx from "classix";
@@ -20,7 +21,11 @@ const bodoni_moda = Bodoni_Moda({
 });
 
 const Layout: React.FC<PropsWithChildren> = ({ children }) => (
-  <html lang="en" className={cx(karla.variable, bodoni_moda.variable)}>
+  <html
+    lang="en"
+    className={cx(karla.variable, bodoni_moda.variable)}
+    data-scroll-direction="vertical"
+  >
     <head />
     <body>{children}</body>
   </html>

@@ -1,5 +1,5 @@
 .container {
-  @apply h-screen overflow-y-auto;
+  @apply min-h-screen;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -16,15 +16,10 @@
     }
 
     .presentation {
-      @apply relative mx-auto flex h-full max-w-min flex-col items-center justify-center gap-16 p-32;
-
-      .title,
-      .subtitle {
-        @apply text-center;
-      }
+      @apply relative flex h-full flex-col justify-center gap-16 p-64;
 
       .title {
-        @apply whitespace-nowrap text-6xl;
+        @apply text-9xl font-medium leading-tight;
 
         .salutation {
           @apply font-emphasis italic;
@@ -32,16 +27,8 @@
       }
 
       .subtitle {
-        @apply text-2xl text-black text-opacity-50;
-
-        .emphasis {
-          @apply font-emphasis text-rose-600;
-        }
+        @apply pr-64 text-3xl font-light leading-relaxed text-black;
       }
-    }
-
-    .scrollIcon {
-      @apply sticky bottom-16 left-1/2 -translate-x-1/2 -translate-y-full transform text-6xl;
     }
   }
 }
