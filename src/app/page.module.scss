@@ -27,7 +27,7 @@
         @apply whitespace-nowrap text-6xl;
 
         .salutation {
-          @apply italic;
+          @apply font-emphasis italic;
         }
       }
 
@@ -35,7 +35,7 @@
         @apply text-2xl text-black text-opacity-50;
 
         .emphasis {
-          @apply text-rose-600;
+          @apply font-emphasis text-rose-600;
         }
       }
     }

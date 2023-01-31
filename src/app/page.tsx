@@ -1,5 +1,5 @@
-import { Bodoni_Moda } from "@next/font/google";
-import cx from "classix";
+"use client";
+
 import Image from "next/image";
 import background from "public/background.png";
 
@@ -7,11 +7,6 @@ import Footer from "@/components/Footer";
 import Icon from "@/components/Icon";
 
 import styles from "./page.module.scss";
-
-const emphasis = Bodoni_Moda({
-  style: ["italic"],
-  subsets: ["latin"],
-});
 
 const Page = () => (
   <div className={styles.container}>
@@ -27,9 +22,7 @@ const Page = () => (
 
       <div className={styles.presentation}>
         <div className={styles.title}>
-          <span className={cx(styles.salutation, emphasis.className)}>
-            Hello,{" "}
-          </span>
+          <span className={styles.salutation}>Hello, </span>
           <span>my name is Federico</span>
         </div>
 
@@ -38,7 +31,7 @@ const Page = () => (
           building <span className={styles.emphasis}>curated experiences</span>{" "}
           and{" "}
           <span className={styles.emphasis}>
-            beautiful <span className={emphasis.className}>UI</span>s
+            beautiful <span className={styles.emphasis}>UI</span>s
           </span>
           .
         </div>
