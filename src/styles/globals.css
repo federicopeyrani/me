@@ -10,5 +10,5 @@
 
 html,
 body {
-  @apply bg-white text-xl text-gray-900;
+  @apply bg-background text-text selection:bg-text selection:text-background;
 }

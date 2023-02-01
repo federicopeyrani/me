@@ -9,17 +9,17 @@
   }
 
   .main {
-    @apply relative h-screen;
+    @apply relative h-screen px-32;
 
-    .background {
-      @apply absolute h-full w-full bg-cover object-cover;
+    .header {
+      @apply absolute py-16 text-2xl font-medium;
     }
 
     .presentation {
-      @apply relative flex h-full flex-col justify-center gap-16 p-64;
+      @apply relative flex h-full flex-col justify-center gap-16;
 
       .title {
-        @apply text-9xl font-medium leading-tight;
+        @apply text-12xl font-medium leading-tight;
 
         .salutation {
           @apply font-emphasis italic;
@@ -27,7 +27,7 @@
       }
 
       .subtitle {
-        @apply pr-64 text-3xl font-light leading-relaxed text-black;
+        @apply pr-64 text-6xl font-light leading-relaxed;
       }
     }
   }

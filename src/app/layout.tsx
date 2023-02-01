@@ -14,7 +14,7 @@ const karla = Karla({
 });
 
 const bodoni_moda = Bodoni_Moda({
-  variable: "--font-emphasis",
+  variable: "--font-bodoni-moda",
   style: ["italic"],
   subsets: ["latin"],
   display: "swap",
