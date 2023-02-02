@@ -1,15 +1,18 @@
 .Title {
-  @apply relative h-screen px-16 md:px-32;
+  @apply relative h-screen;
+  @apply px-16 md:px-32;
 
   .header {
-    @apply absolute py-16 text-body font-medium xl:text-body-xl;
+    @apply absolute z-10 py-16 text-body font-medium;
+    @apply text-body xl:text-body-xl;
   }
 
   .presentation {
-    @apply relative flex h-full flex-col justify-center gap-16;
+    @apply relative flex h-full w-min flex-col justify-center gap-16;
 
     .title {
-      @apply text-title font-medium leading-tight lg:text-title-lg xl:text-title-xl 2xl:text-title-2xl;
+      @apply whitespace-nowrap font-medium leading-tight;
+      @apply text-title md:text-title-md lg:text-title-lg xl:text-title-xl 2xl:text-title-2xl;
 
       .salutation {
         @apply font-emphasis italic;
@@ -17,15 +20,18 @@
     }
 
     .separator {
-      @apply h-1 w-16 bg-contrast md:w-64;
+      @apply h-1 bg-contrast;
+      @apply w-16 md:w-64;
     }
 
     .subtitle {
-      @apply text-subtitle font-light leading-relaxed lg:text-subtitle-lg xl:text-subtitle-xl 2xl:text-subtitle-2xl;
+      @apply font-light leading-relaxed;
+      @apply text-subtitle lg:text-subtitle-lg xl:text-subtitle-xl 2xl:text-subtitle-2xl;
     }
   }
 
   .icon {
-    @apply absolute bottom-16 text-4xl xl:text-6xl;
+    @apply absolute bottom-16;
+    @apply text-4xl xl:text-6xl;
   }
 }

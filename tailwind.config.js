@@ -13,6 +13,7 @@ module.exports = {
         "title-2xl": "10rem",
         "title-xl": "7.5rem",
         "title-lg": "6rem",
+        "title-md": "4.5rem",
         title: "3rem",
         "subtitle-2xl": "3rem",
         "subtitle-xl": "2.5rem",
