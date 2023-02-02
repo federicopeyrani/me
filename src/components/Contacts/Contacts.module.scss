@@ -1,5 +1,5 @@
-.Footer {
-  @apply gap-8 p-32;
+.Contacts {
+  @apply gap-8 px-16 py-32 text-body md:px-32 xl:text-body-xl;
 
   display: grid;
   grid-template-areas:
@@ -10,7 +10,7 @@
   grid-template-rows: 1fr auto 1fr;
 
   .title {
-    @apply text-4xl;
+    @apply text-subtitle font-light leading-relaxed lg:text-subtitle-lg xl:text-subtitle-xl 2xl:text-subtitle-2xl;
     grid-area: title;
   }
 
@@ -19,7 +19,7 @@
     @apply flex flex-col gap-4;
 
     a {
-      @apply text-2xl transition-colors hover:text-accent;
+      @apply whitespace-nowrap transition-colors hover:text-accent;
 
       span {
         vertical-align: -0.125em;
@@ -32,7 +32,7 @@
   }
 
   .separator {
-    @apply border-black border-b border-opacity-25;
+    @apply border-b border-contrast;
     grid-area: separator;
   }
 

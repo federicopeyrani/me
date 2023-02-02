@@ -1,6 +1,6 @@
 // noinspection HtmlRequiredTitleElement
 
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import { Bodoni_Moda, Karla } from "@next/font/google";

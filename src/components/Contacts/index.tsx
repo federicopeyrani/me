@@ -1,9 +1,11 @@
+import { ComponentProps } from "react";
+
 import Icon from "@/components/Icon";
 
-import styles from "./Footer.module.scss";
+import styles from "./Contacts.module.scss";
 
-const Footer: React.FC = () => (
-  <footer className={styles.Footer}>
+const Contacts: React.FC<ComponentProps<"section">> = (props) => (
+  <section className={styles.Contacts} {...props}>
     <div className={styles.title}>Let&apos;s keep in touch</div>
 
     <div className={styles.contacts}>
@@ -35,7 +37,7 @@ const Footer: React.FC = () => (
         Instagram <Icon symbol="call_made" />
       </a>
     </div>
-  </footer>
+  </section>
 );
 
-export default Footer;
+export default Contacts;
