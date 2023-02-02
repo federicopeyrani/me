@@ -10,17 +10,23 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        "title-2xl": "10rem",
-        "title-xl": "7.5rem",
-        "title-lg": "6rem",
-        "title-md": "4.5rem",
-        title: "3rem",
-        "subtitle-2xl": "3rem",
-        "subtitle-xl": "2.5rem",
-        "subtitle-lg": "2rem",
-        subtitle: "1.25rem",
-        "body-xl": "1.5rem",
+        // title
+        "title-2xl": "11.089rem",
+        "title-xl": "6.854rem",
+        "title-md": "4.236rem",
+        title: "2.618rem",
+        // subtitle
+        "subtitle-xl": "2.618rem",
+        "subtitle-md": "1.618rem",
+        subtitle: "1rem",
+        // subtitle-small
+        "subtitle-small-xl": "1.618rem",
+        "subtitle-small": "1rem",
+        // body
+        "body-xl": "1.618rem",
         body: "1rem",
+        // overline
+        overline: "1rem",
       },
       fontFamily: {
         sans: ["var(--font-karla)"],

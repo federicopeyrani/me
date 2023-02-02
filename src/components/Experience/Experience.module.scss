@@ -1,0 +1,43 @@
+@use "src/styles/typography";
+
+.Experience {
+  @apply flex flex-col gap-32 py-64;
+  @apply px-16 md:px-32;
+
+  .title {
+    @apply font-light leading-relaxed;
+    @include typography.subtitle;
+  }
+
+  .timeline {
+    @apply gap-y-16;
+
+    display: grid;
+    grid-template-areas:
+      "a b b separator ."
+      ". . c .         d";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 2fr 1fr auto 0 auto;
+
+    .area1 {
+      grid-area: a;
+    }
+
+    .area2 {
+      grid-area: b;
+    }
+
+    .area3 {
+      grid-area: c;
+    }
+
+    .area4 {
+      grid-area: d;
+    }
+
+    .separator {
+      @apply mt-8 -mb-32 w-1 overflow-visible border-l border-contrast;
+      grid-area: separator;
+    }
+  }
+}

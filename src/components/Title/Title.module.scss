@@ -1,18 +1,20 @@
+@use "src/styles/typography";
+
 .Title {
   @apply relative h-screen;
   @apply px-16 md:px-32;
 
   .header {
-    @apply absolute z-10 py-16 text-body font-medium;
-    @apply text-body xl:text-body-xl;
+    @apply absolute py-16 font-medium;
+    @include typography.subtitle-small;
   }
 
   .presentation {
-    @apply relative flex h-full w-min flex-col justify-center gap-16;
+    @apply relative flex h-full w-min flex-col justify-center gap-8 lg:gap-16;
 
     .title {
       @apply whitespace-nowrap font-medium leading-tight;
-      @apply text-title md:text-title-md lg:text-title-lg xl:text-title-xl 2xl:text-title-2xl;
+      @include typography.title;
 
       .salutation {
         @apply font-emphasis italic;
@@ -20,18 +22,18 @@
     }
 
     .separator {
-      @apply h-1 bg-contrast;
+      @apply border-b border-contrast;
       @apply w-16 md:w-64;
     }
 
     .subtitle {
       @apply font-light leading-relaxed;
-      @apply text-subtitle lg:text-subtitle-lg xl:text-subtitle-xl 2xl:text-subtitle-2xl;
+      @include typography.subtitle;
     }
   }
 
   .icon {
-    @apply absolute bottom-16;
+    @apply absolute bottom-16 -translate-x-1/2 transform;
     @apply text-4xl xl:text-6xl;
   }
 }

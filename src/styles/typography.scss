@@ -1,0 +1,19 @@
+@mixin title {
+  @apply text-title md:text-title-md xl:text-title-xl 2xl:text-title-2xl;
+}
+
+@mixin subtitle {
+  @apply text-subtitle md:text-subtitle-md xl:text-subtitle-xl;
+}
+
+@mixin subtitle-small {
+  @apply text-subtitle-small xl:text-subtitle-small-xl;
+}
+
+@mixin body {
+  @apply text-body xl:text-body-xl;
+}
+
+@mixin overline {
+  @apply text-overline;
+}
