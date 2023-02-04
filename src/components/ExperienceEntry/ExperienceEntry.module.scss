@@ -7,14 +7,9 @@
     @apply flex h-0 flex-row items-center justify-between py-8;
 
     .indicatorStart,
-    .indicatorMiddle,
     .indicatorEnd {
       @apply whitespace-nowrap bg-background;
       @include typography.overline;
-    }
-
-    .indicatorMiddle {
-      @apply translate-x-1/2 transform;
     }
   }
 

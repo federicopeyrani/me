@@ -23,14 +23,15 @@ const Experience: React.FC<ComponentProps<"section">> = (props) => (
         title="Bachelor in Computer Science and Engineering"
         subtitle="Politecnico di Milano"
         indicatorStart="September 2016"
-        indicatorMiddle="September 2019"
+        indicatorEnd="September 2019"
       />
 
       <ExperienceEntry
         className={styles.area2}
         title="Master of Science in Computer Science and Engineering"
         subtitle="Politecnico di Milano"
-        indicatorMiddle={<Icon symbol="school" />}
+        indicatorStart="September 2019"
+        indicatorEnd={<Icon symbol="school" />}
       />
 
       <div className={styles.separator} />
@@ -40,13 +41,14 @@ const Experience: React.FC<ComponentProps<"section">> = (props) => (
         title="Front-end Developer Internship"
         subtitle="ContentWise"
         indicatorStart="September 2021"
-        indicatorMiddle="April 2022"
+        indicatorEnd="April 2022"
       />
 
       <ExperienceEntry
         className={styles.area4}
         title="Junior Front-end Developer"
         subtitle="ContentWise"
+        indicatorStart="April 2022"
         indicatorEnd="Now"
       />
     </div>

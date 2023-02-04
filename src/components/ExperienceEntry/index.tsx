@@ -8,7 +8,6 @@ export type ExperienceEntryProps = ComponentProps<"div"> & {
   subtitle?: ReactNode;
   description?: ReactNode;
   indicatorStart?: ReactNode;
-  indicatorMiddle?: ReactNode;
   indicatorEnd?: ReactNode;
 };
 
@@ -18,22 +17,29 @@ const ExperienceEntry: React.FC<ExperienceEntryProps> = ({
   subtitle,
   description,
   indicatorStart,
-  indicatorMiddle,
   indicatorEnd,
   children,
   ...props
 }) => (
   <div className={cx(styles.ExperienceEntry, className)} {...props}>
     <div className={styles.indicators}>
-      <div className={styles.indicatorStart}>{indicatorStart}</div>
+      <div
+        className={cx(
+          styles.indicatorStart,
+          "ExperienceEntry__footer__indicatorStart"
+        )}
+      >
+        {indicatorStart}
+      </div>
 
-      {indicatorMiddle && (
-        <div className={styles.indicatorMiddle}>{indicatorMiddle}</div>
-      )}
-
-      {indicatorEnd && (
-        <div className={styles.indicatorEnd}>{indicatorEnd}</div>
-      )}
+      <div
+        className={cx(
+          styles.indicatorEnd,
+          "ExperienceEntry__footer__indicatorEnd"
+        )}
+      >
+        {indicatorEnd}
+      </div>
     </div>
 
     <div className={styles.separator} />
