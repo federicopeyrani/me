@@ -2,8 +2,14 @@
   @apply text-title md:text-title-md xl:text-title-xl 2xl:text-title-2xl;
 }
 
+@mixin title-small {
+  @apply text-title-small md:text-title-small-md xl:text-title-small-xl;
+  @apply font-medium;
+}
+
 @mixin subtitle {
   @apply text-subtitle md:text-subtitle-md xl:text-subtitle-xl;
+  @apply font-light;
 }
 
 @mixin subtitle-small {

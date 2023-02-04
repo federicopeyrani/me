@@ -1,5 +1,6 @@
 "use client";
 
+import About from "@/components/About";
 import Contacts from "@/components/Contacts";
 import Experience from "@/components/Experience";
 import Title from "@/components/Title";
@@ -13,6 +14,7 @@ const Page = () => {
   return (
     <div ref={ref} className={styles.container}>
       <Title data-scroll-section="" />
+      <About data-scroll-section="" />
       <Experience data-scroll-section="" />
       <Contacts data-scroll-section="" />
     </div>

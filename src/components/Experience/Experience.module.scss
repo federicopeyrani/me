@@ -1,12 +1,18 @@
 @use "src/styles/typography";
 
 .Experience {
-  @apply flex flex-col gap-32 overflow-hidden py-64;
+  @apply flex flex-col gap-16 overflow-hidden pt-64 md:gap-32;
   @apply px-16 md:px-32;
 
   .title {
     @apply font-light leading-relaxed;
-    @include typography.subtitle;
+    @include typography.title-small;
+
+    .overline {
+      @apply font-light;
+      @include typography.overline;
+      font-variant: tabular-nums;
+    }
   }
 
   .timeline {

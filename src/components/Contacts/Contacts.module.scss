@@ -1,19 +1,15 @@
 @use "src/styles/typography";
 
 .Contacts {
-  @apply gap-8 px-16 py-32 md:px-32;
+  @apply grid px-16 py-64 md:px-32;
+  @apply grid-cols-[1fr] [grid-template-areas:"title""contacts""socials"];
+  @apply md:grid-cols-[1fr_1fr] md:[grid-template-areas:"title_contacts""title_socials"];
+
   @include typography.body;
 
-  display: grid;
-  grid-template-areas:
-    "title  contacts"
-    "title  separator"
-    "title  socials";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto 1fr;
-
   .title {
-    @apply font-light leading-relaxed;
+    @apply pb-16 font-light leading-relaxed;
+    @apply md:border-r md:border-contrast md:pb-0;
     @include typography.subtitle;
 
     grid-area: title;
@@ -33,15 +29,14 @@
   }
 
   .contacts {
+    @apply border-b border-contrast pb-8;
+    @apply md:pl-8;
     grid-area: contacts;
   }
 
-  .separator {
-    @apply border-b border-contrast;
-    grid-area: separator;
-  }
-
   .socials {
+    @apply pt-8;
+    @apply md:pl-8;
     grid-area: socials;
   }
 }

@@ -8,7 +8,8 @@ import styles from "./Experience.module.scss";
 const Experience: React.FC<ComponentProps<"section">> = (props) => (
   <section id="experience_root" className={styles.Experience} {...props}>
     <div data-scroll="" data-scroll-speed="1" className={styles.title}>
-      Experience
+      <span className={styles.overline}>/002</span>
+      <h2>Experience</h2>
     </div>
 
     <div

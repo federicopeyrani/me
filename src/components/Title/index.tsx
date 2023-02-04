@@ -12,7 +12,7 @@ const Title: React.FC<ComponentProps<"section">> = (props) => (
       </span>
     </div>
 
-    <div className={styles.presentation} data-scroll="" data-scroll-speed="2">
+    <div className={styles.presentation} data-scroll="" data-scroll-speed="4">
       <div className={styles.title}>
         <p>
           <span className={styles.salutation}>Hello, </span>
@@ -26,7 +26,7 @@ const Title: React.FC<ComponentProps<"section">> = (props) => (
       <div className={styles.separator} />
 
       <div className={styles.subtitle}>
-        A front-end developer based in Milan, with a thriving passion for
+        A front-end engineer based in Milan, with a thriving passion for
         building curated experiences and beautiful UIs
       </div>
     </div>

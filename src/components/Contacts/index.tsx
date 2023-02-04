@@ -26,8 +26,6 @@ const Contacts: React.FC<ComponentProps<"section">> = (props) => (
       </a>
     </div>
 
-    <div className={styles.separator} />
-
     <div className={styles.socials}>
       <a
         href="https://www.instagram.com/federico.kt"

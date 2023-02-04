@@ -1,0 +1,28 @@
+@use "src/styles/typography";
+
+.About {
+  @apply pt-64;
+  @apply grid [grid-template-areas:"title""content"];
+  @apply md:grid-cols-[auto_1fr] md:[grid-template-areas:"title_content"];
+
+  .title {
+    @apply px-16 md:px-32;
+    @apply overflow-hidden;
+    @include typography.title-small;
+
+    grid-area: title;
+
+    .overline {
+      @apply font-light md:text-end;
+      @include typography.overline;
+      font-variant: tabular-nums;
+    }
+  }
+
+  .content {
+    @apply overflow-hidden px-16 md:px-32;
+    @apply mt-16 md:mt-0 md:border-l md:border-contrast;
+    @include typography.subtitle;
+    grid-area: content;
+  }
+}
