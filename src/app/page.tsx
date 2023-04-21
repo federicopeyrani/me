@@ -1,5 +1,7 @@
 "use client";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import About from "@/components/About";
 import Contacts from "@/components/Contacts";
 import Experience from "@/components/Experience";
@@ -17,6 +19,12 @@ const Page = () => {
       <About data-scroll-section="" />
       <Experience data-scroll-section="" />
       <Contacts data-scroll-section="" />
+
+      {
+        // no intention to do anything nefarious with the data, pinky swear,
+        // just curios to see if anyone visits my page c:
+      }
+      <Analytics />
     </div>
   );
 };
