@@ -15,6 +15,10 @@ module.exports = {
         "title-xl": "6.854rem",
         "title-md": "4.236rem",
         title: "2.618rem",
+        // title-small
+        "title-small-xl": "4.236rem",
+        "title-small-md": "2.618rem",
+        "title-small": "1.618rem",
         // subtitle
         "subtitle-xl": "2.618rem",
         "subtitle-md": "1.618rem",
