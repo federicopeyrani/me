@@ -28,7 +28,7 @@
     // a b b separator  .
     // . . c .          d
     @apply xl:gap-y-16;
-    @apply xl:grid-cols-[3fr_2fr_0.5fr_0_1fr] xl:[grid-template-areas:"a_b_b_separator_.""._._c_._d"];
+    @apply xl:grid-cols-[2fr_0.5fr_1.5fr_0_2fr] xl:[grid-template-areas:"a_b_b_separator_.""._._c_._d"];
 
     :global {
       .ExperienceEntry__footer {
